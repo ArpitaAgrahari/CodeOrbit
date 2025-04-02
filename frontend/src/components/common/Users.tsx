@@ -1,5 +1,5 @@
-import { useAppContext } from "../../context/AppContext"
-import { RemoteUser, USER_CONNECTION_STATUS } from "../../types/user"
+import { useAppContext } from "@/context/AppContext"
+import { RemoteUser, USER_CONNECTION_STATUS } from "@/types/user"
 import Avatar from "react-avatar"
 
 function Users() {

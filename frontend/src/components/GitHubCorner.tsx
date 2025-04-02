@@ -1,5 +1,5 @@
-import { useSettings } from "../context/SettingContext"
-import useWindowDimensions from "../hooks/useWindowDimensions"
+import { useSettings } from "@/context/SettingContext"
+import useWindowDimensions from "@/hooks/useWindowDimensions"
 
 function GitHubCorner() {
     const { showGitHubCorner } = useSettings()
@@ -7,7 +7,7 @@ function GitHubCorner() {
 
     return (
         <a
-            href="https://github.com/ArpitaAgrahari/CodeOrbit"
+            href="http://github.com/ArpitaAgrahari"
             className="github-corner"
             aria-label="View source on GitHub"
             target="_blank"

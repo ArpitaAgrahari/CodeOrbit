@@ -1,8 +1,8 @@
-import Select from "../../../components/common/Select"
-import { useSettings } from "../../../context/SettingContext"
-import useResponsive from "../../../hooks/useResponsive"
-import { editorFonts } from "../../../resources/Fonts"
-import { editorThemes } from "../../../resources/Themes"
+import Select from "@/components/common/Select"
+import { useSettings } from "@/context/SettingContext"
+import useResponsive from "@/hooks/useResponsive"
+import { editorFonts } from "@/resources/Fonts"
+import { editorThemes } from "@/resources/Themes"
 import { langNames } from "@uiw/codemirror-extensions-langs"
 import { ChangeEvent, useEffect } from "react"
 
@@ -49,7 +49,6 @@ function SettingsView() {
             style={{ height: viewHeight }}
         >
             <h1 className="view-title">Settings</h1>
-            {/* Choose Font Family option */}
             <div className="flex w-full items-end gap-2">
                 <Select
                     onChange={handleFontFamilyChange}
@@ -73,21 +72,19 @@ function SettingsView() {
                     })}
                 </select>
             </div>
-            {/* Choose theme option */}
+            
             <Select
                 onChange={handleThemeChange}
                 value={theme}
                 options={Object.keys(editorThemes)}
                 title="Theme"
             />
-            {/* Choose language option */}
             <Select
                 onChange={handleLanguageChange}
                 value={language}
                 options={langNames}
                 title="Language"
             />
-            {/* Show GitHub corner option */}
             <div className="mt-4 flex w-full items-center justify-between">
                 <label>Show github corner</label>
                 <label className="relative inline-flex cursor-pointer items-center">

@@ -1,10 +1,11 @@
-import { ICopilotContext } from "../types/copilot"
+import { ICopilotContext } from "@/types/copilot"
 import { createContext, ReactNode, useContext, useState } from "react"
 import toast from "react-hot-toast"
 import axiosInstance from "../api/pollinationsApi"
 
 const CopilotContext = createContext<ICopilotContext | null>(null)
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useCopilot = () => {
     const context = useContext(CopilotContext)
     if (context === null) {
@@ -34,7 +35,7 @@ const CopilotContextProvider = ({ children }: { children: ReactNode }) => {
                     {
                         role: "system",
                         content:
-                            "You are a code generator copilot for project named CodeOrbit AI. Generate code based on the given prompt without any explanation. Return only the code, formatted in Markdown using the appropriate language syntax (e.g., js for JavaScript, py for Python). Do not include any additional text or explanations. If you don't know the answer, respond with 'Sorry I am not able to generate the response of the given prompt'.",
+                            "You are a code generator copilot for project named CodeOrbit. Generate code based on the given prompt without any explanation. Return only the code, formatted in Markdown using the appropriate language syntax (e.g., js for JavaScript, py for Python). Do not include any additional text or explanations. If you don't know the answer, respond with 'I am not able to fetch the response'.",
                     },
                     {
                         role: "user",

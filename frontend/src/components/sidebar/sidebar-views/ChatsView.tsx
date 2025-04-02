@@ -1,6 +1,6 @@
-import ChatInput from "../../../components/chats/ChatInput"
-import ChatList from "../../../components/chats/ChatList"
-import useResponsive from "../../../hooks/useResponsive"
+import ChatInput from "@/components/chats/ChatInput"
+import ChatList from "@/components/chats/ChatList"
+import useResponsive from "@/hooks/useResponsive"
 
 const ChatsView = () => {
     const { viewHeight } = useResponsive()
@@ -11,9 +11,8 @@ const ChatsView = () => {
             style={{ height: viewHeight }}
         >
             <h1 className="view-title">Group Chat</h1>
-            {/* Chat list */}
+           
             <ChatList />
-            {/* Chat input */}
             <ChatInput />
         </div>
     )

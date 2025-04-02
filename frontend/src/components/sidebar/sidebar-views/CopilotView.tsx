@@ -1,8 +1,8 @@
-import { useCopilot } from "../../../context/CopilotContext"
-import { useFileSystem } from "../../../context/FileContext"
-import { useSocket } from "../../../context/SocketContext"
-import useResponsive from "../../../hooks/useResponsive"
-import { SocketEvent } from "../../../types/socket"
+import { useCopilot } from "@/context/CopilotContext"
+import { useFileSystem } from "@/context/FileContext"
+import { useSocket } from "@/context/SocketContext"
+import useResponsive from "@/hooks/useResponsive"
+import { SocketEvent } from "@/types/socket"
 import toast from "react-hot-toast"
 import { LuClipboardPaste, LuCopy, LuRepeat } from "react-icons/lu"
 import ReactMarkdown from "react-markdown"
@@ -47,7 +47,7 @@ function CopilotView() {
     const replaceCodeInFile = () => {
         if (activeFile) {
             const isConfirmed = confirm(
-                `Are you sure you want to replace the code in the file ?`,
+                `Are you sure you want to replace the code in the file?`,
             )
             if (!isConfirmed) return
             const content = output.replace(/```[\w]*\n?/g, "").trim()
@@ -112,6 +112,7 @@ function CopilotView() {
             <div className="h-full rounded-lg w-full overflow-y-auto p-0">
                 <ReactMarkdown
                     components={{
+                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
                         code({ inline, className, children, ...props }: any) {
                             const match = /language-(\w+)/.exec(className || "")
                             const language = match ? match[1] : "javascript" // Default to JS

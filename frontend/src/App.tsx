@@ -13,7 +13,7 @@ const App = () => {
                     <Route path="/editor/:roomId" element={<EditorPage />} />
                 </Routes>
             </Router>
-            <Toast /> 
+            <Toast /> {/* Toast component from react-hot-toast */}
             <GitHubCorner />
         </>
     )

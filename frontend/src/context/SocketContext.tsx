@@ -1,10 +1,10 @@
-import { DrawingData } from "../types/app"
+import { DrawingData } from "@/types/app"
 import {
     SocketContext as SocketContextType,
     SocketEvent,
     SocketId,
-} from "../types/socket"
-import { RemoteUser, USER_STATUS, User } from "../types/user"
+} from "@/types/socket"
+import { RemoteUser, USER_STATUS, User } from "@/types/user"
 import {
     ReactNode,
     createContext,
@@ -47,6 +47,7 @@ const SocketProvider = ({ children }: { children: ReactNode }) => {
     )
 
     const handleError = useCallback(
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (err: any) => {
             console.log("socket error", err)
             setStatus(USER_STATUS.CONNECTION_FAILED)

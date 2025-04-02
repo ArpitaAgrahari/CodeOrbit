@@ -1,5 +1,5 @@
-import { ChatContext as ChatContextType, ChatMessage } from "../types/chat"
-import { SocketEvent } from "../types/socket"
+import { ChatContext as ChatContextType, ChatMessage } from "@/types/chat"
+import { SocketEvent } from "@/types/socket"
 import {
     ReactNode,
     createContext,

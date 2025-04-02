@@ -1,4 +1,4 @@
-import { RemoteUser } from "../../types/user"
+import { RemoteUser } from "@/types/user"
 import { StateField } from "@codemirror/state"
 import { EditorView, showTooltip } from "@codemirror/view"
 

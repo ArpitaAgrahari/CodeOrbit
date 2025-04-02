@@ -4,15 +4,15 @@ import {
     FileName,
     FileSystemItem,
     Id,
-} from "../types/file"
-import { SocketEvent } from "../types/socket"
-import { RemoteUser } from "../types/user"
+} from "@/types/file"
+import { SocketEvent } from "@/types/socket"
+import { RemoteUser } from "@/types/user"
 import {
     findParentDirectory,
     getFileById,
     initialFileStructure,
     isFileExist,
-} from "../utils/file"
+} from "@/utils/file"
 import { saveAs } from "file-saver"
 import JSZip from "jszip"
 import {

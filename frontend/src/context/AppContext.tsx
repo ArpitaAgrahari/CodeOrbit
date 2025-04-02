@@ -2,8 +2,8 @@ import {
     ACTIVITY_STATE,
     AppContext as AppContextType,
     DrawingData,
-} from "../types/app"
-import { RemoteUser, USER_STATUS, User } from "../types/user"
+} from "@/types/app"
+import { RemoteUser, USER_STATUS, User } from "@/types/user"
 import { ReactNode, createContext, useContext, useState } from "react"
 
 const AppContext = createContext<AppContextType | null>(null)

@@ -1,8 +1,8 @@
-import useLocalStorage from "../hooks/useLocalStorage"
+import useLocalStorage from "@/hooks/useLocalStorage"
 import {
     Settings,
     SettingsContext as SettingsContextType,
-} from "../types/setting"
+} from "@/types/setting"
 import {
     ReactNode,
     createContext,

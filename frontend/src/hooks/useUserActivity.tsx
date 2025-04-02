@@ -1,7 +1,7 @@
-import { useAppContext } from "../context/AppContext"
-import { useSocket } from "../context/SocketContext"
-import { SocketEvent, SocketId } from "../types/socket"
-import { RemoteUser, USER_CONNECTION_STATUS } from "../types/user"
+import { useAppContext } from "@/context/AppContext"
+import { useSocket } from "@/context/SocketContext"
+import { SocketEvent, SocketId } from "@/types/socket"
+import { RemoteUser, USER_CONNECTION_STATUS } from "@/types/user"
 import { useCallback, useEffect } from "react"
 
 function useUserActivity() {

@@ -1,12 +1,12 @@
-import { useAppContext } from "../../context/AppContext"
-import { useFileSystem } from "../../context/FileContext"
-import { useSettings } from "../../context/SettingContext"
-import { useSocket } from "../../context/SocketContext"
-import usePageEvents from "../../hooks/usePageEvents"
-import useResponsive from "../../hooks/useResponsive"
-import { editorThemes } from "../../resources/Themes"
-import { FileSystemItem } from "../../types/file"
-import { SocketEvent } from "../../types/socket"
+import { useAppContext } from "@/context/AppContext"
+import { useFileSystem } from "@/context/FileContext"
+import { useSettings } from "@/context/SettingContext"
+import { useSocket } from "@/context/SocketContext"
+import usePageEvents from "@/hooks/usePageEvents"
+import useResponsive from "@/hooks/useResponsive"
+import { editorThemes } from "@/resources/Themes"
+import { FileSystemItem } from "@/types/file"
+import { SocketEvent } from "@/types/socket"
 import { color } from "@uiw/codemirror-extensions-color"
 import { hyperLink } from "@uiw/codemirror-extensions-hyper-link"
 import { LanguageName, loadLanguage } from "@uiw/codemirror-extensions-langs"
@@ -52,6 +52,7 @@ function Editor() {
         setTimeOut(newTimeOut)
     }
 
+    // Listen wheel event to zoom in/out and prevent page reload
     usePageEvents()
 
     useEffect(() => {

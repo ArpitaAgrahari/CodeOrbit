@@ -1,12 +1,12 @@
-import { useAppContext } from "../../context/AppContext"
-import { useFileSystem } from "../../context/FileContext"
-import { useViews } from "../../context/ViewContext"
-import { useContextMenu } from "../../hooks/useContextMenu"
-import useWindowDimensions from "../../hooks/useWindowDimensions"
-import { ACTIVITY_STATE } from "../../types/app"
-import { FileSystemItem, Id } from "../../types/file"
-import { sortFileSystemItem } from "../../utils/file"
-import { getIconClassName } from "../../utils/getIconClassName"
+import { useAppContext } from "@/context/AppContext"
+import { useFileSystem } from "@/context/FileContext"
+import { useViews } from "@/context/ViewContext"
+import { useContextMenu } from "@/hooks/useContextMenu"
+import useWindowDimensions from "@/hooks/useWindowDimensions"
+import { ACTIVITY_STATE } from "@/types/app"
+import { FileSystemItem, Id } from "@/types/file"
+import { sortFileSystemItem } from "@/utils/file"
+import { getIconClassName } from "@/utils/getIconClassName"
 import { Icon } from "@iconify/react"
 import cn from "classnames"
 import { MouseEvent, useEffect, useRef, useState } from "react"
@@ -19,7 +19,7 @@ import {
     RiFolderUploadLine,
 } from "react-icons/ri"
 import RenameView from "./RenameView"
-import useResponsive from "../../hooks/useResponsive"
+import useResponsive from "@/hooks/useResponsive"
 
 function FileStructureView() {
     const { fileStructure, createFile, createDirectory, collapseDirectories } =

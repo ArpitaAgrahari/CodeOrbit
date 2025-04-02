@@ -1,5 +1,5 @@
-import { useFileSystem } from "../../context/FileContext"
-import useResponsive from "../../hooks/useResponsive"
+import { useFileSystem } from "@/context/FileContext"
+import useResponsive from "@/hooks/useResponsive"
 import cn from "classnames"
 import Editor from "./Editor"
 import FileTab from "./FileTab"

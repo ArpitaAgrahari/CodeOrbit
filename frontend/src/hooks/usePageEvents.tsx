@@ -1,4 +1,4 @@
-import { useSettings } from "../context/SettingContext"
+import { useSettings } from "@/context/SettingContext"
 import { useEffect } from "react"
 
 function usePageEvents() {

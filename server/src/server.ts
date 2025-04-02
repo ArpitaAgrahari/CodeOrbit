@@ -10,8 +10,11 @@ import path from "path"
 dotenv.config()
 
 const app = express()
+
 app.use(express.json())
+
 app.use(cors())
+
 app.use(express.static(path.join(__dirname, "public"))) 
 
 const server = http.createServer(app)
@@ -24,6 +27,7 @@ const io = new Server(server, {
 })
 
 let userSocketMap: User[] = []
+
 
 function getUsersInRoom(roomId: string): User[] {
 	return userSocketMap.filter((user) => user.roomId == roomId)
@@ -52,7 +56,9 @@ function getUserBySocketId(socketId: SocketId): User | null {
 }
 
 io.on("connection", (socket) => {
+	// Handle user actions
 	socket.on(SocketEvent.JOIN_REQUEST, ({ roomId, username }) => {
+		// Check is username exist in the room
 		const isUsernameExist = getUsersInRoom(roomId).filter(
 			(u) => u.username === username
 		)
@@ -88,7 +94,7 @@ io.on("connection", (socket) => {
 		socket.leave(roomId)
 	})
 
-	
+	// Handle file actions
 	socket.on(
 		SocketEvent.SYNC_FILE_STRUCTURE,
 		({ fileStructure, openFiles, activeFile, socketId }) => {
@@ -257,6 +263,7 @@ io.on("connection", (socket) => {
 const PORT = process.env.PORT || 3000
 
 app.get("/", (req: Request, res: Response) => {
+	// Send the index.html file
 	res.sendFile(path.join(__dirname, "..", "public", "index.html"))
 })
 

@@ -1,5 +1,5 @@
-import { useRunCode } from "../../../context/RunCodeContext"
-import useResponsive from "../../../hooks/useResponsive"
+import { useRunCode } from "@/context/RunCodeContext"
+import useResponsive from "@/hooks/useResponsive"
 import { ChangeEvent } from "react"
 import toast from "react-hot-toast"
 import { LuCopy } from "react-icons/lu"

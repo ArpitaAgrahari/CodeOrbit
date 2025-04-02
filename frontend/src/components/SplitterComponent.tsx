@@ -1,6 +1,6 @@
-import { useViews } from "../context/ViewContext"
-import useLocalStorage from "../hooks/useLocalStorage"
-import useWindowDimensions from "../hooks/useWindowDimensions"
+import { useViews } from "@/context/ViewContext"
+import useLocalStorage from "@/hooks/useLocalStorage"
+import useWindowDimensions from "@/hooks/useWindowDimensions"
 import { ReactNode } from "react"
 import Split from "react-split"
 

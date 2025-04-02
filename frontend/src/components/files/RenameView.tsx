@@ -1,4 +1,4 @@
-import { useFileSystem } from "../../context/FileContext"
+import { useFileSystem } from "@/context/FileContext"
 import { FormEvent, useCallback, useEffect, useRef, useState } from "react"
 import toast from "react-hot-toast"
 

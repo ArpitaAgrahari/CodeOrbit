@@ -1,5 +1,5 @@
 import illustration from "@/assets/illustration.svg"
-import FormComponent from "../components/forms/FormComponent"
+import FormComponent from "@/components/forms/FormComponent"
 
 function HomePage() {
     return (
@@ -8,7 +8,7 @@ function HomePage() {
                 <div className="flex w-full animate-up-down justify-center sm:w-1/2 sm:pl-4">
                     <img
                         src={illustration}
-                        alt="CodeOrbit Illustration"
+                        alt="CodeOrbit"
                         className="mx-auto w-[250px] sm:w-[400px]"
                     />
                 </div>
