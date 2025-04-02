@@ -16,8 +16,8 @@ FROM node:18-alpine AS runner
 
 WORKDIR /app
 
-COPY --from=builder /build/dist dist/
-COPY --from=builder /build/package*.json .
+COPY --from=builder /build/dist ./dist/
+COPY --from=builder /build/package*.json ./
 COPY --from=builder /build/node_modules ./node_modules
 
 EXPOSE 5173
