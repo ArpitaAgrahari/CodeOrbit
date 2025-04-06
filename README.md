@@ -20,7 +20,7 @@ CodeOrbit is a real-time collaborative code editor that allows developers to wor
 
 ## Live Demo
 
-You can access the deployed version of CodeOrbit here: [Deployed Link](your_deployed_link_here)
+You can access the deployed version of CodeOrbit here: [Deployed Link](https://codeorbit.azurewebsites.net/)
 
 ## Tech Stack
 
@@ -41,6 +41,7 @@ You can access the deployed version of CodeOrbit here: [Deployed Link](your_depl
 
 - Git & GitHub
 - Docker
+- Azure
 
 ## Installation Guide
 
