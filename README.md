@@ -93,3 +93,26 @@ Open your browser and go to:
 ```sh
 http://localhost:5173/
 ```
+
+## 🚀 How to Use CodeOrbit
+
+1. **Open the Website**  
+   Visit the live site: [https://codeorbit.azurewebsites.net/](https://codeorbit.azurewebsites.net/)
+
+2. **Generate a Room ID**  
+   Click on **“Generate Room ID”** to create a new collaborative session, or enter an existing Room ID if you already have one.
+
+3. **Enter Your Username**  
+   Type your name or a preferred username. This helps other collaborators identify you.
+
+4. **Invite Teammates**  
+   Share either:
+
+   - The **Room ID** (along with the website link)
+   - Or directly send them the **website link** and ask them to join using the same Room ID and their username.
+
+5. **Join the Collaboration**  
+   Your peers can open the website, enter the Room ID and their username, and click **“Join”** to enter the collaborative environment.
+
+6. **Start Coding Together!**  
+   Code in real-time, chat, sketch, preview, and use AI features — all while learning and collaborating with your teammates.
