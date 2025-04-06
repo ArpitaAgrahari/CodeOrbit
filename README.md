@@ -41,6 +41,7 @@ You can access the deployed version of CodeOrbit here: [Deployed Link](https://c
 
 - Git & GitHub
 - Docker
+- Azure
 
 ## Installation Guide
 
